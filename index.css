@@ -8,6 +8,11 @@ img {
   height: 20px;
 }
 
+span img {
+  width: 8px;
+  height: 8px;
+}
+
 button {
   border-radius: 5px;
   cursor: pointer;
@@ -155,11 +160,13 @@ button {
 .section>.table>.table_controller>.nav span {
   padding: 8px;
 }
-.section>.table>.table_controller>.nav img{
+
+.section>.table>.table_controller>.nav img {
   background: #F8F9FC;
   cursor: pointer;
 }
-.section>.table>.table_controller>.nav img:hover{
+
+.section>.table>.table_controller>.nav img:hover {
   background: #F1F3F9;
   cursor: pointer;
 }
@@ -374,9 +381,15 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  gap: 4px;
 }
 
-.section>.sidebar>.list li {
+.section>.sidebar>.list span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
   color: rgba(29, 36, 51, 0.75);
   font-size: 14px;
   font-style: normal;
@@ -432,5 +445,9 @@ button {
 
 .progress {
   color: #3D8AF6;
+  background: #E8F1FE;
+}
+
+.section>.table>.table_content>.tbody>.row.selected {
   background: #E8F1FE;
 }
