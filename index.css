@@ -263,11 +263,18 @@ button {
 }
 
 
-.section>.table>.table_content>.tbody>.row>.cell:nth-child(3)>span:nth-child(2),
-.section>.table>.table_content>.tbody>.row>.cell:nth-last-child(2)>span:nth-child(2) {
+.section>.table>.table_content>.tbody>.row>.cell:nth-child(3)>div>span,
+.section>.table>.table_content>.tbody>.row>.cell:nth-last-child(2)>div>span {
   padding: 2px 4px;
   color: #E0593E;
   background: #FFEFEC;
+}
+
+.section>.table>.table_content>.tbody>.row>.cell:nth-last-child(3)>div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px 8px;
 }
 
 .section>.sidebar {
