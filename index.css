@@ -205,6 +205,7 @@ button {
 .section>.table>.table_content>.thead>.row {
   background: #F1F3F9;
   height: 43px;
+  font-weight: 600;
 }
 
 .section>.table>.table_content>.tbody>.row {
