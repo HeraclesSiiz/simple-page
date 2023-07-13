@@ -199,7 +199,7 @@ button {
 .section>.table>.table_content>.thead>.row,
 .section>.table>.table_content>.tbody>.row {
   display: grid;
-  grid-template-columns: 64px 16% 15% 23% 12% 11% auto 64px;
+  grid-template-columns: 64px 16% 15% 20% 14% 13% auto 64px;
 }
 
 .section>.table>.table_content>.thead>.row {
@@ -451,4 +451,12 @@ button {
 
 .section>.table>.table_content>.tbody>.row.selected {
   background: #E8F1FE;
+}
+
+@media only screen and (max-width: 1620px) {
+  .section>.table>.table_content>.thead>.row,
+  .section>.table>.table_content>.tbody>.row {
+    display: grid;
+    grid-template-columns: 64px 200px 180px 270px 160px 150px 160px 64px;
+  }
 }
