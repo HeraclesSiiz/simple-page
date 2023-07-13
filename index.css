@@ -151,6 +151,19 @@ button {
   justify-content: center;
 }
 
+.section>.table>.table_controller>.nav img,
+.section>.table>.table_controller>.nav span {
+  padding: 8px;
+}
+.section>.table>.table_controller>.nav img{
+  background: #F8F9FC;
+  cursor: pointer;
+}
+.section>.table>.table_controller>.nav img:hover{
+  background: #F1F3F9;
+  cursor: pointer;
+}
+
 .section>.table>.table_controller>.page {
   justify-content: flex-end;
 }
@@ -161,6 +174,100 @@ button {
 
 .section>.table>.table_controller>.page>select {
   padding: 6px 9px;
+}
+
+.section>.table>.table_content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+/* table */
+.section>.table>.table_content>.thead,
+.section>.table>.table_content>.tbody {
+  width: 100%;
+}
+
+.section>.table>.table_content>.thead>.row,
+.section>.table>.table_content>.tbody>.row {
+  display: grid;
+  grid-template-columns: 64px 16% 15% 23% 12% 11% auto 64px;
+}
+
+.section>.table>.table_content>.thead>.row {
+  background: #F1F3F9;
+  height: 43px;
+}
+
+.section>.table>.table_content>.tbody>.row {
+  border-bottom: 1px solid #F1F3F9;
+  background: #FFF;
+  height: 64px;
+}
+
+.section>.table>.table_content .cell {
+  display: flex;
+  gap: 4px;
+}
+
+/* thead cell */
+.section>.table>.table_content>.thead>.row>.cell {
+  padding: 13px 8px;
+  justify-content: flex-start;
+}
+
+.section>.table>.table_content>.thead>.row>.cell:first-child {
+  justify-content: center;
+}
+
+.section>.table>.table_content>.thead>.row>.cell:nth-last-child(2) {
+  justify-content: flex-end;
+}
+
+/* tbody cell */
+.section>.table>.table_content>.tbody>.row>.cell {
+  padding: 10px 8px;
+}
+
+.section>.table>.table_content>.tbody>.row>.cell:first-child {
+  align-items: center;
+  justify-content: center;
+}
+
+.section>.table>.table_content>.tbody>.row>.cell:nth-child(2),
+.section>.table>.table_content>.tbody>.row>.cell:nth-child(3),
+.section>.table>.table_content>.tbody>.row>.cell:nth-last-child(2) {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section>.table>.table_content>.tbody>.row>.cell:nth-last-child(2) {
+  align-items: flex-end;
+}
+
+.section>.table>.table_content>.tbody>.row>.cell:nth-child(4),
+.section>.table>.table_content>.tbody>.row>.cell:nth-child(5),
+.section>.table>.table_content>.tbody>.row>.cell:nth-child(6) {
+  align-items: center;
+}
+
+.section>.table>.table_content>.tbody>.row>.cell:last-child {
+  align-items: center;
+}
+
+/* cell items */
+.section>.table>.table_content>.tbody>.row>.cell:nth-child(2)>span:nth-child(2) {
+  flex-direction: column;
+  font-size: 10px;
+}
+
+
+.section>.table>.table_content>.tbody>.row>.cell:nth-child(3)>span:nth-child(2),
+.section>.table>.table_content>.tbody>.row>.cell:nth-last-child(2)>span:nth-child(2) {
+  padding: 2px 4px;
+  color: #E0593E;
+  background: #FFEFEC;
 }
 
 .section>.sidebar {
@@ -191,6 +298,10 @@ button {
 }
 
 .section>.sidebar>.bar_title>button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   border: none;
   padding: 10px 0px 10px 16px;
   background: #F1F3F9;
@@ -288,7 +399,6 @@ button {
   cursor: pointer;
 }
 
-
 .section>.sidebar>.box>button {
   display: flex;
   align-items: center;
@@ -300,4 +410,20 @@ button {
   background: #E8F1FE;
   color: #166EE8;
   font-size: 16px;
+}
+
+.success {
+  color: #5ABB7A;
+  background: #F0FFF5;
+}
+
+.pending,
+.complete {
+  color: #1D2433;
+  background: #F8F9FC;
+}
+
+.progress {
+  color: #3D8AF6;
+  background: #E8F1FE;
 }
